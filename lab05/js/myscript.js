@@ -152,7 +152,7 @@ $(document).ready(function() {
     var str = data.split("\n");
     str.forEach(function(item) {
       if(item != ""){
-        $('#provinceName').append("<option value='"+item.substring(0,item.length-1)+"'>"+item+"</option>");
+        $('#provinceName').append("<option value='"+item.substring(0,item.length)+"'>"+item+"</option>");
       }
     });
   });
