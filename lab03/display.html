@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirm</title>
+  <link rel="stylesheet" type="text/css" href="theme.css" />
+</head>
+<body>
+  <div class="panel">
+    <table>
+      <tr>
+        <th>Attribute</th>
+        <th>Data</th>
+      </tr>
+      <tr>
+        <td>First name</th>
+        <td id="firstName">Data</th>
+      </tr>
+      <tr>
+        <td>Last name</td>
+        <td id="lastName">Maria Anders</td>
+      </tr>
+      <tr>
+        <td>House number</td>
+        <td id="houseNumber">Francisco Chang</td>
+      </tr>
+      <tr>
+        <td>Street</td>
+        <td id="street">Roland Mendel</td>
+      </tr>
+      <tr>
+        <td>City</td>
+        <td id="city">Helen Bennett</td>
+      </tr>
+      <tr>
+        <td>Province</td>
+        <td id="province">Yoshi Tannamuri</td>
+      </tr>
+      <tr>
+        <td>Zipcode</td>
+        <td id="zipcode">Giovanni Rovelli</td>
+      </tr>
+      <tr>
+        <td>Phone number</td>
+        <td id="phoneNumber">Giovanni Rovelli</td>
+      </tr>
+      <tr>
+        <td>Cell phone number</td>
+        <td id="cellPhoneNumber">Giovanni Rovelli</td>
+      </tr>
+      <tr>
+        <td>Birthday</td>
+        <td id="date">Giovanni Rovelli</td>
+      </tr>
+      <tr>
+        <td>Citizenship</td>
+        <td id="citizenship">Giovanni Rovelli</td>
+      </tr>
+      <tr>
+        <td>Zodiac Sign</td>
+        <td id="zodiacSign">Giovanni Rovelli</td>
+      </tr>
+      <tr>
+        <td>Zodiac Year</td>
+        <td id="zodiacYear">Giovanni Rovelli</td>
+      </tr>
+      <tr>
+        <td>Birth Day of Week</td>
+        <td id="day">Giovanni Rovelli</td>
+      </tr>
+    </table>
+  </div>
+  <script>
+  window.onload=function() {
+    document.getElementById("firstName").innerHTML = getUrlVars()["firstName"];
+    document.getElementById("lastName").innerHTML = getUrlVars()["lastName"];
+    document.getElementById("houseNumber").innerHTML = getUrlVars()["houseNumber"];
+    document.getElementById("street").innerHTML = getUrlVars()["street"];
+    document.getElementById("city").innerHTML = getUrlVars()["city"];
+    document.getElementById("province").innerHTML = getUrlVars()["province"];
+    document.getElementById("zipcode").innerHTML = getUrlVars()["zipcode"];
+    document.getElementById("phoneNumber").innerHTML = getUrlVars()["phoneNumber"].replace("%2B","+");
+    document.getElementById("cellPhoneNumber").innerHTML = getUrlVars()["cellPhoneNumber"].replace("%2B","+");
+    document.getElementById("date").innerHTML = getUrlVars()["date"];
+    document.getElementById("citizenship").innerHTML = getUrlVars()["citizenship"];
+    document.getElementById("zodiacSign").innerHTML = getUrlVars()["zodiacSign"];
+    document.getElementById("zodiacYear").innerHTML = getUrlVars()["zodiacYear"];
+    document.getElementById("day").innerHTML = getUrlVars()["day"];
+  }
+  function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+  }
+
+  </script>
+</body>
+</html>

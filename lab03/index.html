@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" type="text/css" href="theme.css" />
+</head>
+<body>
+  <div class="panel">
+    <strong class="headTitle" id="headForm">Personality</strong>
+    <form name="myForm" id="myForm" action="display.html" method="get">
+      <div>
+        <strong class="hint">Firstname</strong></br>
+        <!-- First name -->
+        <input id="firstName" type="text" name="firstName"
+        placeholder="First name" maxlength="20"
+        oninput="checkWord(this.value,20,'errormsgFirstName','correctmsgFirstName')"
+        onmousedown="checkWord(this.value,20,'errormsgFirstName','correctmsgFirstName')"
+        autofocus="" onkeypress='return getAlphabet(event)'/>
+        <label class="correctmsg" id="correctmsgFirstName"></label>
+        <label class="errormsg" id="errormsgFirstName"></label></br>
+        <strong class="hint">Lastname</strong></br>
+        <!-- Last name -->
+        <input type="text" name="lastName" id="lastName"
+        placeholder="Last name" maxlength="20"
+        oninput="checkWord(this.value,20,'errormsgLastName','correctmsgLastName')"
+        onmousedown="checkWord(this.value,20,'errormsgLastName','correctmsgLastName')"
+        onkeypress='return getAlphabet(event)' />
+        <label class="correctmsg" id="correctmsgLastName"></label>
+        <label class="errormsg" id="errormsgLastName"></label></br>
+      </div>
+      <div>
+          <legend class="hint"><strong>Address</strong></legend>
+          <strong>House number</strong></br>
+          <!-- House number -->
+          <input type="text" name="houseNumber" id="houseNumber"
+          oninput="checkHouseNumber(this.value,'errormsgHouseNumber','correctmsgHouseNumber')"
+          onmousedown="checkHouseNumber(this.value,'errormsgHouseNumber','correctmsgHouseNumber')" />
+          <label class="correctmsg" id="correctmsgHouseNumber"></label>
+          <label class="errormsg" id="errormsgHouseNumber"></label></br>
+          <strong>Street</strong></br>
+          <!-- Street -->
+          <input type="text" name="street" id="street"
+          oninput="checkWordNumber(this.value,20,'errormsgStreet','correctmsgStreet')"
+          onmousedown="checkWordNumber(this.value,20,'errormsgStreet','correctmsgStreet')"/>
+          <label class="correctmsg" id="correctmsgStreet"></label>
+          <label class="errormsg" id="errormsgStreet"></label></br>
+          <strong>City</strong></br>
+          <!-- City -->
+          <input type="text" name="city" id="city"
+          oninput="checkWord(this.value,20,'errormsgCity','correctmsgCity')"
+          onmousedown="checkWord(this.value,20,'errormsgCity','correctmsgCity')" />
+          <label class="correctmsg" id="correctmsgCity"></label>
+          <label class="errormsg" id="errormsgCity"></label></br>
+          <strong>Province</strong></br>
+          <!-- Province -->
+          <input type="text" name="province" id="province"
+          oninput="checkWord(this.value,20,'errormsgProvince','correctmsgProvince')"
+          onmousedown="checkWord(this.value,20,'errormsgProvince','correctmsgProvince')"/>
+          <label class="correctmsg" id="correctmsgProvince"></label>
+          <label class="errormsg" id="errormsgProvince"></label></br>
+          <strong>Zipcode</strong></br>
+          <!-- Zipcode -->
+          <input type="text" name="zipcode" id="zipcode"
+          onkeypress='return event.charCode >= 48 &&
+          event.charCode <= 57' maxlength="5"
+          oninput="checkZipcode(this.value,'errormsgZip','correctmsgZip')"
+          onmousedown="checkZipcode(this.value,'errormsgZip','correctmsgZip')"/>
+          <label class="correctmsg" id="correctmsgZip"></label>
+          <label class="errormsg" id="errormsgZip"></label></br>
+      </div>
+      <div>
+        <strong>Phone number</strong></br>
+        <input type="text" name="phoneNumber" id="phoneNumber"
+        oninput="checkPhoneNumber(this.value,'errormsgPNumber','correctmsgPNumber')"
+        onmousedown="checkPhoneNumber(this.value,'errormsgPNumber','correctmsgPNumber')"/>
+        <label class="correctmsg" id="correctmsgPNumber"></label>
+        <label class="errormsg" id="errormsgPNumber"></label></br>
+        <strong>Cell phone number</strong></br>
+        <input type="text" name="cellPhoneNumber" id="cellPhoneNumber"
+        oninput="checkCellPhoneNumber(this.value,'errormsgCPNumber','correctmsgCPNumber')"
+        onmousedown="checkCellPhoneNumber(this.value,'errormsgCPNumber','correctmsgCPNumber')"/>
+        <label class="correctmsg" id="correctmsgCPNumber"></label>
+        <label class="errormsg" id="errormsgCPNumber"></label></br>
+      </div>
+      <div>
+        <strong>Birthday</strong></br>
+        <input type="date" name="date" id="date" />
+      </div>
+      <div>
+        <strong>Citizenship</strong></br>
+        <input type="text" name="citizenship" id="citizenship"
+        oninput="checkCitizenship(this.value,'errormsgId','correctmsgId')"
+        onmousedown="checkCitizenship(this.value,'errormsgId','correctmsgId')"/>
+        <label class="correctmsg" id="correctmsgId"></label>
+        <label class="errormsg" id="errormsgId"></label></br>
+      </div>
+      <div>
+        <strong>Zodiac Sign</strong></br>
+        <select name="zodiacSign" id="zodiacSign">
+          <option value="Aries">Aries</option>
+          <option value="Jaurus">Jaurus</option>
+          <option value="Gemini">Gemini</option>
+          <option value="Cancer">Cancer</option>
+          <option value="Leo">Leo</option>
+          <option value="Vigro">Vigro</option>
+          <option value="Libra">Libra</option>
+          <option value="Scorpio">Scorpio</option>
+          <option value="Sagittarius">Sagittarius</option>
+          <option value="Capricorn">Capricorn</option>
+          <option value="Aquarius">Aquarius</option>
+          <option value="Pisces">Pisces</option>
+        </select>
+      </div>
+      <div>
+        <strong>Zodiac Year</strong></br>
+        <select name="zodiacYear" id="zodiacYear">
+          <option value="Rat">Rat</option>
+          <option value="Ox">Ox</option>
+          <option value="Tiger">Tiger</option>
+          <option value="Rabbit">Rabbit</option>
+          <option value="Dragon">Dragon</option>
+          <option value="Snake">Snake</option>
+          <option value="Horse">Horse</option>
+          <option value="Goat">Goat</option>
+          <option value="Monkey">Monkey</option>
+          <option value="Rooster">Rooster</option>
+          <option value="Dog">Dog</option>
+          <option value="Pig">Pig</option>
+        </select>
+      </div>
+      <div>
+        <strong>Birth Day of Week</strong></br>
+        <select name="day" id="day">
+          <option value="Sunday">Sunday</option>
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+          <option value="Saturday">Saturday</option>
+        </select>
+      </div>
+      <input type="button" onclick="save()" value="Save"  />
+      <input type="reset" value="Cancel"  />
+      <input type="submit" onclick="" value="Submit"  />
+
+    </form>
+
+
+  </div>
+  <script src="script.js"></script>
+  <script></script>
+
+
+</body>
+</html>
