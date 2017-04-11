@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thailand4.0</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/theme-childen.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/theme-gentleman.css" /> -->
+    <link id="css" rel="stylesheet" type="text/css" href="css/theme-lady.css" />
+</head>
+
+<body>
+    <!-- <script src="js/myscript.js"></script> -->
+    <div class="header">
+        <!-- <h1 class="title01">Thailand</h1> -->
+        <!-- <img class="title" src="images/thailand.jpg" /> -->
+        <div class="title">
+
+        </div>
+        <!-- <img src="images/top.jpg" /> -->
+    </div>
+
+    <div class="main">
+        <div class="form">
+            <fieldset>
+                <legend>
+                    <strong>Please fill your infomation</strong>
+                </legend>
+                <form id="myform" method="post">
+                    <strong class="label">Firstname</strong>
+                    <input id="firstName" class="input" name="firstName" type="text" maxlength="20" />
+                    <label class="correctmsg" id="correctmsgFirstName"></label>
+                    <label class="errormsg" id="errormsgFirstName"></label></br>
+                    <strong class="label">Lastname</strong>
+                    <input id="lastName" class="input" name="lastName" type="text" maxlength="20" />
+                    <label class="correctmsg" id="correctmsgLastName"></label>
+                    <label class="errormsg" id="errormsgLastName"></label></br>
+                    <strong class="label">Birthday</strong>
+                    <input id="birthday" class="input" name="birthday" type="date" /></br>
+                    <strong class="label">Gender</strong>
+                    <input type="radio" value="male" name="gender" />Male
+                    <input type="radio" value="female" name="gender" />Female</br>
+                    <strong class="label">Province</strong>
+                    <input id="province" class="input" name="province" type="text" list="provinceName" /></br>
+                    <datalist id="provinceName">
+
+                    </datalist>
+                    <strong class="label"></strong>
+                    <input id="submit" type="button" class="button" value="Submit" />
+                    <input type="reset" class="button" value="Cancel" />
+                    <input type="button" id="test" value="Test" style="display:none" />
+                </form>
+            </fieldset>
+        </div>
+        <div class="show">
+          <div id="greet">
+            <strong id="greeting" style="text-align:center">Thailand</strong>
+
+          </div>
+          <div>
+            <strong id="namePro" style="text-align:center"></strong>
+          </div>
+          <div id="motta-contain">
+            <strong id="motta" style="text-align:center"></strong>
+          </div>
+          <div id="containimg" style="text-align:center">
+            <img id="img" src=""/>
+          </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/myscript.js"></script>
+    <!-- <script>console.log("aaa")</script> -->
+</body>
+
+</html>
