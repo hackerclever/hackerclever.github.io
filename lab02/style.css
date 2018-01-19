@@ -1,0 +1,207 @@
+
+html {
+	margin: 0;
+	padding: 0;
+	}
+body {
+	font: 75% georgia, sans-serif;
+	font-size: 20px;
+	line-height: 1.88889;
+	color: black;
+	background-image: url(bg.jpg);
+	margin: 0;
+	padding: 0;
+	}
+p {
+	margin-top: 0;
+	padding-left: 20px;
+	text-align: justify;
+	}
+h3 {
+
+	font: italic bold normal 2.5em georgia, sans-serif;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+	/*padding-left: 200px;*/
+	text-align: center;
+	color: #7D775C;
+	}
+a:link {
+	font-weight: bold;
+	text-decoration: none;
+	color: #B7A5DF;
+	}
+a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	color: #D4CDDC;
+	}
+a:hover, a:focus, a:active {
+	text-decoration: underline;
+	color: #9685BA;
+	}
+abbr {
+	border-bottom: none;
+	}
+
+.page-wrapper {
+	margin: 0;
+	position: relative;
+	float: right;
+	}
+
+.intro {
+	min-width: 470px;
+	width: 100%;
+	}
+
+header h1 {
+	font-size: 120px;
+	font-family: fantasy;
+	color: white;
+	background-color: black;
+	padding-left: 200px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+	float: center;
+	clear: both;	
+	}
+header h2 {
+	color: #7D775C;
+	margin-top: 0px;
+	margin-bottom: 40px;
+	/*width: 300px;*/
+	height: 18px;
+	float: left;
+	padding-left: 20%;
+	text-align: center;
+	}
+header {
+	padding-top: 0px;
+	height: 87px;
+}
+
+.summary {
+	clear: both;
+	margin-left: 15%;
+	margin-right: 5%;
+	float: center;
+	background-color: rgba(200,200,200,0.3);
+	border-radius: 10px;
+	}
+.summary p {
+	font: italic 1.1em/2.2 georgia;
+	text-align: center;
+	margin-left: 15%;
+	margin-right: 5%;
+
+	}
+
+.preamble {
+	/*clear: right;*/
+	padding-top: 0px;
+	margin-left: 15%;
+	margin-right: 5%;
+	text-align: center;
+	background-color: rgba(200,200,200,0.3);
+	border-radius: 10px;
+	}
+.supporting {
+	margin-left: 15%;
+	margin-right: 5%;
+	margin-bottom: 40px;
+	
+	}
+.explanation,.participation,.benefits,.requirements{
+	background-color: rgba(200,200,200,0.3);
+	border-radius: 10px;
+}
+
+footer {
+	text-align: center;
+	}
+footer a:link, footer a:visited {
+	margin-right: 20px;
+	}
+
+.sidebar {
+	margin-top: 225px;
+	border: solid gray 5px;
+	border-radius: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	float: left;
+	clear: right;
+	width: 15%;
+	}
+.sidebar .wrapper {
+	font: 16px verdana, sans-serif;
+	padding: 10px;
+	margin-top: 0px;
+	width: 90%;
+	background-color: rgba(200,200,200,0.3);
+	}
+.sidebar h3.select {
+	background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left;
+	margin: 1px 0 5px 0;
+	width: 97px;
+	height: 16px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.sidebar h3.archives {
+	background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top left;
+	margin: 25px 0 5px 0;
+	width:57px;
+	height: 14px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.sidebar h3.resources {
+	background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top left;
+	margin: 25px 0 5px 0;
+	width:63px;
+	height: 10px;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	}
+.sidebar li {
+	line-height: 1.3em;
+	/*background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center;*/
+	display: block;
+	padding-top: 5px;
+	margin-bottom: 5px;
+	list-style-type: none;
+	}
+.sidebar li a:link {
+	color: #988F5E;
+	}
+.sidebar li a:visited {
+	color: #B3AE94;
+	}
+
+
+.extra1 {
+	background: transparent url(paint.gif) top left no-repeat;
+	background-size: 50%;
+	position: absolute;
+	margin-left: 4%;
+	top: 50px;
+	left: 0px;
+	width: 148px;
+	height: 120px;
+	}

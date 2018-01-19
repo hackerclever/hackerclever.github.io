@@ -1,0 +1,95 @@
+body {
+    /*background: url("../images/lady/bg.jpg") no-repeat fixed;*/
+    /*background: url("../images/lady/bg.webp") repeat;*/
+    /*background-color: #F3B59B;*/
+    /*background-color: #9FE0F6;*/
+    /*background-color: #F3E59A;*/
+    background-color: #348899;
+    /*background-color: #96CEB4;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    /*padding: 2.5%;*/
+}
+.header {
+  height: 400px;
+  width: 95%;
+  background: url("../images/gentleman/head-bg.png") no-repeat;
+  display: inline-block;
+  text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.title {
+  background: url("../images/gentleman/lb-thailand.png") no-repeat;
+  height: 200px;
+  width: 360px;
+  margin: 100px auto;
+}
+
+.form {
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  width:95%;
+  display: inline-block;
+  background-color: rgba(151,156,156,1.0);
+  text-align: left;
+}
+
+.show {
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  width:95%;
+  display: inline-block;
+  background-color: #F3E59A;
+  text-align: left;
+}
+
+/*.main {
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  width:95%;
+  display: inline-block;
+  background-color: rgba(255,255,224,1.0);
+  text-align: left;
+}*/
+
+.input {
+  position: relative;
+  margin: 5px;
+}
+
+strong.label {
+  display: inline-block;
+  /*float: left;*/
+  /*clear: left;*/
+  width: 100px;
+  /*text-align: right;;*/
+}
+
+.button {
+  border-radius: 10px;
+  background-color: #9FE0F6;
+}
+.show {
+  text-align: center;
+  display: inline-block;
+}
+#greeting,#namePro,#img{
+  text-align: center;
+}
+
+/*img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+
+}*/

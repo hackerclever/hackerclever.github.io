@@ -1,0 +1,103 @@
+@font-face {
+  font-family: memory;
+  src: url(../font/memory.ttf);
+}
+
+body {
+    font-family: memory;
+    background-color: #7ACCBE;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+.header {
+  height: 400px;
+  width: 95%;
+  background: url("../images/children/head-bg.jpg") no-repeat;
+  display: inline-block;
+  text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.title {
+  background: url("../images/children/lb-thailand1.png") no-repeat;
+  height: 200px;
+  width: 360px;
+  margin: 100px auto;
+}
+
+.form {
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  width:95%;
+  display: inline-block;
+  background-color: #FFFFF7;
+  text-align: left;
+}
+
+.show {
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  width:95%;
+  display: inline-block;
+  background-color: #F3E59A;
+  text-align: left;
+}
+
+/*.main {
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  width:95%;
+  display: inline-block;
+  background-color: rgba(255,255,224,1.0);
+  text-align: left;
+}*/
+
+.input {
+  position: relative;
+  margin: 5px;
+}
+
+strong.label {
+  display: inline-block;
+  /*float: left;*/
+  /*clear: left;*/
+  width: 100px;
+  /*text-align: right;;*/
+}
+
+.button {
+  border-radius: 10px;
+  background-color: #9FE0F6;
+}
+.show {
+  text-align: center;
+  display: inline-block;
+}
+
+p, strong{
+  font-size: 30px;
+}
+
+#namePro {
+  font-size: 50px;
+}
+
+#greeting,#namePro,#img{
+  text-align: center;
+}
+
+/*img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+
+}*/
